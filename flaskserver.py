@@ -10,7 +10,7 @@ import IOfuncs as iof
 darknet_path = '../pyyolo/darknet'
 datacfg = 'cfg/coco.data'
 cfgfile = 'cfg/yolo.cfg'
-weightfile = '../weights/yolo.weights'
+weightfile = '../../weights/yolo.weights'
 thresh = 0.24
 hier_thresh = 0.5
 pyyolo.init(darknet_path, datacfg, cfgfile, weightfile)
