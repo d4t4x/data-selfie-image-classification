@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify, abort
-import json, urllib, sys, cv2, shutil, time
+# import json, urllib, sys, cv2, shutil, time
+import json, urllib, sys, shutil, time
 from io import BytesIO
 from PIL import Image
 import numpy as np
