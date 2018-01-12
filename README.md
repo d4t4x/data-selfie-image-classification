@@ -1,13 +1,13 @@
 # Image Classification API for DataSelfie
 
-This is the code for an image classificationAPI that is used by [DataSelfie](https://github.com/d4t4x/data-selfie).
+This is the code for the image classification API that is used by [DataSelfie](https://github.com/d4t4x/data-selfie).
 Its main components are [Yolo and Darknet](https://pjreddie.com/darknet/yolo/), used via the [pyyolo-wrapper](https://github.com/digitalbrain79/pyyolo) for image classification and [Gunicorn](http://gunicorn.org) for reliable server functionality. 
 
 ## Build it yourself
 
 ### Install pyyolo
 
-Follow the installation instructions of [pyyolo](https://github.com/digitalbrain79/pyyolo). To avoid unexcessary logging of the predictio times for each image, I got rid of [this line](https://github.com/digitalbrain79/pyyolo/blob/master/libyolo.c#L140) before the install.
+Follow the installation instructions of [pyyolo](https://github.com/digitalbrain79/pyyolo). To avoid unexcessary logging of the prediction times for each image, I got rid of [this line](https://github.com/digitalbrain79/pyyolo/blob/master/libyolo.c#L140) before the install.
 
 ### Download weight file
 
