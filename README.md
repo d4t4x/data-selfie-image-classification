@@ -1,6 +1,6 @@
-# Image Classification API for DataSelfie
+# Image Classification API for Data Selfie
 
-This is the code for the image classification API that is used by [DataSelfie](https://github.com/d4t4x/data-selfie).
+This is the code for the image classification API that is used by [Data Selfie](https://github.com/d4t4x/data-selfie).
 Its main components are [Yolo and Darknet](https://pjreddie.com/darknet/yolo/), used via the [pyyolo-wrapper](https://github.com/digitalbrain79/pyyolo) for image classification and [Gunicorn](http://gunicorn.org) for reliable server functionality. 
 
 ## Build it yourself
@@ -11,7 +11,7 @@ Follow the installation instructions of [pyyolo](https://github.com/digitalbrain
 
 ### Download weight file
 
-For DataSelfie, we are using weights from the makers of Darknet as described on [this](https://pjreddie.com/darknet/yolo/) page. 
+For Data Selfie, we are using weights from the makers of Darknet as described on [this](https://pjreddie.com/darknet/yolo/) page. 
 
 ```
 wget https://pjreddie.com/media/files/yolo.weights
@@ -50,13 +50,13 @@ pip install gunicorn greenlet gevent
 
 ### Run the API
 
-For DataSelfie we run the API like this, from the directory of this repo:
+For Data Selfie we run the API like this, from the directory of this repo:
 
 ```
 gunicorn --workers=2 --bind=0.0.0.0:8888 -t 100 -k gevent wsgi
 ```
 
 
-Good luck! Contact us or [Leon Eckert](http://leoneckert.com) if you have any questions.
+Good luck! File a issue in this repo, contact us or [Leon Eckert](http://leoneckert.com) if you have any questions.
 
 
